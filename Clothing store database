@@ -1,0 +1,14 @@
+--Create a clothing store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quanity INTEGER, price INTEGER, Rating INTEGER );
+
+INSERT INTO store VALUES (1, "shirts", 5, 3, 3);
+INSERT INTO store VALUES (2, "dresses", 5, 7, 1);
+INSERT INTO store VALUES (3, "shorts", 3, 2, 4);
+INSERT INTO store VALUES (4, "jumpsuit", 2, 5, 2);
+
+--display the database ordered by price 
+SELECT * FROM store ORDER BY price ;
+
+--What item has the highest rating?
+SELECT * FROM store WHERE rating >2 
